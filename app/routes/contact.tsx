@@ -32,7 +32,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold">Email</h4>
-                                    <p className="text-gray-400">your.email@example.com</p>
+                                    <p className="text-gray-400">hieuit21103@gmail.com</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
@@ -41,7 +41,7 @@ export default function Contact() {
                                 </div>
                                 <div>
                                     <h4 className="font-semibold">Phone</h4>
-                                    <p className="text-gray-400">+1 234 567 890</p>
+                                    <p className="text-gray-400">+84 813 600 766</p>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4 mt-8">
