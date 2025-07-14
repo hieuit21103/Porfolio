@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import Navbar from "./components/Navbar";
+import MusicPlayer from "./components/MusicPlayer";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -36,6 +37,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         <Navbar />
         {children}
+        <MusicPlayer />
         <ScrollRestoration />
         <Scripts />
       </body>

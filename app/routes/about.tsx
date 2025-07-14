@@ -21,7 +21,7 @@ export default function About() {
         { name: "REDIS", icon: Images.redis },
         { name: "RABBITMQ", icon: Images.rabbitmq },
         { name: "GITHUB", icon: Images.github },
-        
+
     ];
 
     return (
@@ -46,10 +46,6 @@ export default function About() {
                             <p><span className="font-bold">Nation:</span> Viet Nam</p>
                             <p><span className="font-bold">Phone:</span> 0813600766</p>
                             <p><span className="font-bold">Language:</span> Vietnamese, English</p>
-                            <button className="mt-6 bg-cyan-500 text-black px-6 py-3 rounded-full flex items-center gap-2 hover:bg-cyan-600 transition-colors">
-                                <Download size={20} />
-                                DOWNLOAD CV
-                            </button>
                         </div>
                         <div className="space-y-4">
                             <p><span className="font-bold">Last Name:</span> Le Minh</p>
@@ -77,12 +73,23 @@ export default function About() {
                     </div>
                 </div>
 
+                {/* Download CV */}
+                <div className="mb-16 text-center">
+                    <div className="flex items-center justify-center">
+                        <button className="mt-6 bg-cyan-500 text-black px-6 py-3 rounded-full flex items-center gap-2 hover:bg-cyan-600 transition-colors">
+                            <Download size={20} />
+                            DOWNLOAD CV
+                        </button>
+                    </div>
+                </div>
+
+
                 {/* Education & Experience */}
                 <div className="mb-24">
                     <h2 className="text-3xl font-bold mb-12 text-center">EDUCATION & EXPERIENCE</h2>
                     <div className="relative">
                         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-cyan-500"></div>
-                        
+
                         <div className="relative z-10">
                             {/* Education Item 1 */}
                             <div className="flex items-center mb-8">
@@ -105,7 +112,7 @@ export default function About() {
                                     <p className="text-gray-400">Project Solution For Student</p>
                                 </div>
                             </div>
-                            
+
                             {/* Experience Item 2 */}
                             <div className="flex items-center mb-8">
                                 <div className="w-1/2 pr-12 text-right">
@@ -125,14 +132,14 @@ export default function About() {
                     <h2 className="text-3xl font-bold mb-12 text-center">MY SKILLS</h2>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
                         {skills.map((skill) => (
-                            <div 
-                                key={skill.name} 
+                            <div
+                                key={skill.name}
                                 className="bg-gray-900/50 p-8 rounded-lg text-center hover:bg-gray-800 transition-colors duration-300 hover:scale-105 transform"
                             >
-                                <img 
-                                    src={skill.icon} 
-                                    alt={skill.name} 
-                                    className="w-16 h-16 mx-auto mb-6 object-contain" 
+                                <img
+                                    src={skill.icon}
+                                    alt={skill.name}
+                                    className="w-16 h-16 mx-auto mb-6 object-contain"
                                 />
                                 <p className="text-lg">{skill.name}</p>
                             </div>

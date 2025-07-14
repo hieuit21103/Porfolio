@@ -1,5 +1,5 @@
 import React from 'react';
-import { type MetaFunction } from "react-router";
+import { NavLink, type MetaFunction } from "react-router";
 import { Facebook, Github, Linkedin, Mail, Phone} from 'lucide-react';
 
 export const meta: MetaFunction = () => {
@@ -45,15 +45,17 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div className="flex items-center gap-4 mt-8">
-                                <button className="w-12 h-12 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors duration-300">
+                                <NavLink
+                                to="https://github.com/hieuit21103" target="_blank" className="w-12 h-12 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors duration-300">
                                     <Github className="w-6 h-6" />
-                                </button>
+                                </NavLink>
                                 <button className="w-12 h-12 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors duration-300">
                                     <Linkedin className="w-6 h-6" />
                                 </button>
-                                <button className="w-12 h-12 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors duration-300">
+                                <NavLink 
+                                    to="https://www.facebook.com/nosatisfacfion" target="_blank" className="w-12 h-12 bg-gray-800 hover:bg-cyan-500 rounded-full flex items-center justify-center transition-colors duration-300">
                                     <Facebook className="w-6 h-6" />
-                                </button>
+                                </NavLink>
                             </div>
                         </div>
                     </div>
