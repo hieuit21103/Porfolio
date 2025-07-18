@@ -13,6 +13,8 @@ import redisIcon from './redis-svgrepo-com.svg';
 import sqliteIcon from './sqlite-svgrepo-com.svg';
 import tailwindIcon from './tailwind-svgrepo-com.svg';
 import dockerIcon from './docker-svgrepo-com.svg';
+import postmanIcon from './postman-icon-svgrepo-com.svg';
+import { p } from 'node_modules/@react-router/dev/dist/routes-DHIOx0R9';
 
 export const Images = {
     css: cssIcon,
@@ -29,7 +31,8 @@ export const Images = {
     redis: redisIcon,
     sqlite: sqliteIcon,
     tailwind: tailwindIcon,
-    docker: dockerIcon
+    docker: dockerIcon,
+    postman: postmanIcon
 } as const;
 
 export {

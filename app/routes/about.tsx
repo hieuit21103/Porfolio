@@ -24,6 +24,7 @@ export default function About() {
         { name: "RABBITMQ", icon: Images.rabbitmq },
         { name: "GITHUB", icon: Images.github },
         { name: "DOCKER", icon: Images.docker },
+        { name: "POSTMAN", icon: Images.postman },
 
     ];
 
