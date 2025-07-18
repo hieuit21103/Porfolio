@@ -14,13 +14,16 @@ export default function About() {
         { name: "TAILWIND", icon: Images.tailwind },
         { name: "JAVASCRIPT", icon: Images.javascript },
         { name: "LARAVEL", icon: Images.laravel },
+        { name: "LIVEWIRE", icon: Images.livewire },
         { name: "DOTNET", icon: Images.dotnet },
+        { name: "ASP.NET", icon: Images.aspnet },
         { name: "SQLITE", icon: Images.sqlite },
         { name: "SQLSERVER", icon: Images.sqlserver },
         { name: "MYSQL", icon: Images.mysql },
         { name: "REDIS", icon: Images.redis },
         { name: "RABBITMQ", icon: Images.rabbitmq },
         { name: "GITHUB", icon: Images.github },
+        { name: "DOCKER", icon: Images.docker },
 
     ];
 
